@@ -1,0 +1,21 @@
+{
+  "name": "progressive-digital/admin_styles",
+  "description": "Provides additional features for the cookies module.",
+  "type": "drupal-module",
+  "license": "GPL-3.0-or-later",
+  "authors": [
+    {
+      "name": "Guido Schmitz",
+      "email": "schmitz@progressivedigital.de",
+      "homepage": "https://progressivedigital.de",
+      "role": "Developer"
+    }
+  ],
+  "homepage": "https://github.com/progressive-digital/admin_styles",
+  "support": {
+    "issues": "https://github.com/progressive-digital/admin_styles/issues",
+    "source": "https://github.com/progressive-digital/admin_styles"
+  },
+  "minimum-stability": "dev",
+  "require": {}
+}

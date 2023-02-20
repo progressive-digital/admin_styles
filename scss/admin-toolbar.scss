@@ -1,0 +1,30 @@
+#toolbar-administration {
+  position: relative;
+  z-index: 5000;
+}
+.toolbar-horizontal {
+  .editing-container {
+    height: calc(100% - 39px);
+    top: 39px;
+  }
+  &.toolbar-tray-open {
+    .editing-container {
+      height: calc(100% - 79px);
+      top: 79px;
+    }
+  }
+  .offcanvas-end {
+    top: 39px;
+  }
+  &.toolbar-tray-open {
+    .offcanvas-end {
+      top: 79px;
+    }
+  }
+}
+
+.toolbar-vertical {
+  .offcanvas-end {
+    top: 39px;
+  }
+}

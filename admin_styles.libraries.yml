@@ -1,0 +1,9 @@
+claro:
+  css:
+    theme:
+      css/custom-bootstrap-grid.min.css: { minified: true }
+      css/claro.min.css: { minified: true }
+admin-toolbar:
+  css:
+    theme:
+      css/admin-toolbar.min.css: { minified: true }

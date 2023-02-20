@@ -1,0 +1,11 @@
+name: Admin Styles
+type: module
+description: Provides CSS for the backend and other admin ui elements.
+core_version_requirement: ^9.2 || ^10
+package: 'Theme'
+
+libraries-extend:
+  claro/global-styling:
+    - admin_styles/claro
+  admin_toolbar/toolbar.tree:
+    - admin_styles/admin-toolbar

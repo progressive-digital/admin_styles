@@ -1,0 +1,200 @@
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/maps";
+@import "../node_modules/bootstrap/scss/mixins";
+
+@import "../node_modules/bootstrap/scss/utilities";
+@import "../node_modules/bootstrap/scss/root";
+
+@media screen and (min-width: 61rem) {
+  .layout-region--node-main .layout-region__content,
+  .layout-region--node-footer .layout-region__content {
+    max-width: 100% !important;
+  }
+}
+
+.field--name-field-content-paragraphs {
+  > div > div > table,
+  [data-drupal-selector="edit-field-content-paragraphs"] > table {
+
+    .field-multiple-table {
+      tr.even {
+        background-color: rgba($black,0.05);
+      }
+      tr.odd {
+        background-color: rgba($white,0.5);
+      }
+    }
+    > tbody {
+      > tr {
+        background-color: rgba($black,0.1);
+        &:not(:first-child) {
+          border-top: 30px solid rgba($white,0.6);
+        }
+      }
+    }
+    .field--type-entity-reference-revisions {
+      margin-bottom: 30px;
+      .field-multiple-table {
+        thead th {
+          background-color: rgba($white,0.6);
+        }
+      }
+    }
+  }
+}
+.field--name-field-header-content {
+  > div > div > table,
+  [data-drupal-selector="edit-field-header-content"] > table {
+
+    .field-multiple-table {
+      tr.even {
+        background-color: rgba($black,0.05);
+      }
+      tr.odd {
+        background-color: rgba($white,0.5);
+      }
+    }
+    > tbody {
+      > tr {
+        background-color: rgba($black,0.1);
+        &:not(:first-child) {
+          border-top: 30px solid rgba($white,0.6);
+        }
+      }
+    }
+    .field--type-entity-reference-revisions {
+      margin-bottom: 30px;
+      .field-multiple-table {
+        thead th {
+          background-color: rgba($white,0.6);
+          color: $black;
+        }
+      }
+    }
+  }
+}
+.field--name-field-header-overlay {
+  > div > div > table,
+  [data-drupal-selector="edit-field-header-overlay"] > table {
+
+    .field-multiple-table {
+      tr.even {
+        background-color: rgba($black,0.05);
+      }
+      tr.odd {
+        background-color: rgba($white,0.5);
+      }
+    }
+    > tbody {
+      > tr {
+        background-color: rgba($black,0.1);
+        &:not(:first-child) {
+          border-top: 30px solid rgba($white,0.6);
+        }
+      }
+    }
+    .field--type-entity-reference-revisions {
+      margin-bottom: 30px;
+      .field-multiple-table {
+        thead th {
+          background-color: rgba($white,0.6);
+          color: $black;
+        }
+      }
+    }
+  }
+}
+
+.node-form {
+  .flex-row {
+    gap: var(--#{$variable-prefix}gap, #{$spacer});
+    >* {
+      flex: 1 1 auto;
+    }
+    fieldset:not(.fieldgroup) {
+      min-width: 300px;
+      height: 100%;
+      margin: 0;
+    }
+  }
+  .media-library-selection .media-library-item--grid {
+    width: auto;
+  }
+  .layout-node-form {
+    display: flex;
+    flex-flow: row wrap;
+    gap: #{$spacer};
+    .layout-region {
+      float: none !important;
+      flex: 1 1 auto;
+      padding: 0;
+      &.layout-region--node-main {
+        flex-basis: 100%;
+        width: 100%;
+        @media(min-width: 992px) {
+          flex-basis: calc(70% - #{$spacer});
+          width: calc(70% - #{$spacer});
+        }
+      }
+      &.layout-region--node-secondary {
+        flex-basis: 100%;
+        width: 100%;
+        @media(min-width: 992px) {
+          flex-basis: 30%;
+          width: 30%;
+        }
+      }
+    }
+  }
+  .paragraphs-subform {
+    padding-right: 10px;
+  }
+}
+
+.field--widget-link-default,
+.field--widget-link-attributes {
+  .field-multiple-table {
+    td.field-multiple-drag + td,
+    td.field-multiple-drag + td .ajax-new-content {
+      display: flex;
+      flex-flow: row wrap;
+      gap: 0 #{$spacer};
+      height: auto;
+      padding-right: 10px;
+      > div {
+        flex: 1 1 calc((100% - #{$spacer}) / 2);
+        @include media-breakpoint-up(md) {
+          width: calc((100% - #{$spacer}) / 2);
+        }
+        .form-item__description {
+          display: none;
+        }
+      }
+      > details {
+        flex: 1 1 100%;
+        .details-wrapper {
+          display: flex;
+          flex-flow: row wrap;
+          gap: 0 #{$spacer};
+          > div {
+            flex: 0 1 calc((100% - #{2 * $spacer}) / 3);
+            @include media-breakpoint-up(md) {
+              width: calc((100% - #{2 * $spacer}) / 3);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+details.claro-details[data-drupal-selector$="group-settings"] {
+  transition: all 0.3s ease-in-out;
+  &[open] {
+    box-shadow: 1px 1px 16px rgba(0,0,0,.2);
+    summary {
+      background-color: #dadce2;
+    }
+  }
+}
