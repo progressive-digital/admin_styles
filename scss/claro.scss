@@ -13,9 +13,9 @@
   }
 }
 
-.field--name-field-content-paragraphs {
+.field--widget-paragraphs {
   > div > div > table,
-  [data-drupal-selector="edit-field-content-paragraphs"] > table {
+  [data-drupal-selector^="edit-field-"] > table {
 
     .field-multiple-table {
       tr.even {
@@ -38,68 +38,6 @@
       .field-multiple-table {
         thead th {
           background-color: rgba($white,0.6);
-        }
-      }
-    }
-  }
-}
-.field--name-field-header-content {
-  > div > div > table,
-  [data-drupal-selector="edit-field-header-content"] > table {
-
-    .field-multiple-table {
-      tr.even {
-        background-color: rgba($black,0.05);
-      }
-      tr.odd {
-        background-color: rgba($white,0.5);
-      }
-    }
-    > tbody {
-      > tr {
-        background-color: rgba($black,0.1);
-        &:not(:first-child) {
-          border-top: 30px solid rgba($white,0.6);
-        }
-      }
-    }
-    .field--type-entity-reference-revisions {
-      margin-bottom: 30px;
-      .field-multiple-table {
-        thead th {
-          background-color: rgba($white,0.6);
-          color: $black;
-        }
-      }
-    }
-  }
-}
-.field--name-field-header-overlay {
-  > div > div > table,
-  [data-drupal-selector="edit-field-header-overlay"] > table {
-
-    .field-multiple-table {
-      tr.even {
-        background-color: rgba($black,0.05);
-      }
-      tr.odd {
-        background-color: rgba($white,0.5);
-      }
-    }
-    > tbody {
-      > tr {
-        background-color: rgba($black,0.1);
-        &:not(:first-child) {
-          border-top: 30px solid rgba($white,0.6);
-        }
-      }
-    }
-    .field--type-entity-reference-revisions {
-      margin-bottom: 30px;
-      .field-multiple-table {
-        thead th {
-          background-color: rgba($white,0.6);
-          color: $black;
         }
       }
     }
