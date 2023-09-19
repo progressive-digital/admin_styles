@@ -1,0 +1,8 @@
+button {
+  &.editing-container__close,
+  &.editing-container__toggle {
+    -webkit-appearance: none;
+    background-color: transparent;
+    border: none;
+  }
+}
