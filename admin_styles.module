@@ -17,6 +17,6 @@ function admin_styles_library_info_alter(&$libraries, $extension) {
   }
   // Attach frontend-editing.min.css to the frontend_editing module.
   if ($extension === 'frontend_editing' && isset($libraries['frontend_editing'])) {
-    $libraries['frontend-editing']['css']['theme'][$module_path . '/frontend-editing.min.css'] = ['minified' => TRUE];
+    $libraries['frontend_editing']['css']['theme'][$module_path . '/frontend-editing.min.css'] = ['minified' => TRUE];
   }
 }
