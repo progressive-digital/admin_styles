@@ -1,5 +1,5 @@
 name: Admin Styles
 type: module
 description: Provides CSS for the backend and other admin ui elements.
-core_version_requirement: ^9.2 || ^10
+core_version_requirement: ^9.2 || ^10 || ^11
 package: 'Theme'
